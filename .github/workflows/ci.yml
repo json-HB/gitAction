@@ -19,12 +19,5 @@ jobs:
       - run: npm run build
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v1.3.0
-        with:
-          # GitHub repository where assets will be deployed (default current)
-          repo: master
-          # Git branch where assets will be deployed
-          target_branch: gh-pages
-          # Create incremental commit instead of doing push force
-          # keep_history: false
       env:
         CI: true
