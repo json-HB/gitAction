@@ -23,10 +23,10 @@ jobs:
           npm run build
         env:
           CI: true
-    deploy:
-      needs: build
-      name: GitHub Pages Deploy
-      runs-on: macOS-latest
-      steps:
-        - name: GitHub Pages Deploy
-        - uses: maxheld83/ghpages@v0.2.1
+  deploy:
+    needs: build
+    name: GitHub Pages Deploy
+    runs-on: macOS-latest
+    steps:
+      - name: GitHub Pages Deploy
+      - uses: maxheld83/ghpages@v0.2.1
