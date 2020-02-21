@@ -21,6 +21,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v1.3.0
         with:
           target_branch: gh-pages
-          build_dir: public
       env:
         CI: true
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
