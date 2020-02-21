@@ -5,7 +5,7 @@ on:
     branches:
       - master
 
-jons:
+jobs:
   build:
     name: install
     runs-on: macOS-latest
@@ -24,6 +24,7 @@ jons:
         env:
           CI: true
     deploy:
+      needs: build
       name: GitHub Pages Deploy
       runs-on: macOS-latest
       steps:
