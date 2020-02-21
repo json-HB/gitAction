@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm run build
-      - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v1.3.0
-      env:
-        CI: true
-        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+      - name: GitHub Pages Deploy
+        uses: maxheld83/ghpages@v0.2.1
+        env:
+          CI: true
+          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
