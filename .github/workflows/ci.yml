@@ -17,8 +17,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm run build
-      - name: GitHub Pages Deploy
-        uses: maxheld83/ghpages@v0.2.1
+      - name: Deploy
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
         env:
-          CI: true
-          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          GITHUB_TOKEN: ${{ secrets.gt }}
