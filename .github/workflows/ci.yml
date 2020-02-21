@@ -19,5 +19,8 @@ jobs:
       - run: npm run build
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v1.3.0
+        with:
+          target_branch: gh-pages
+          build_dir: public
       env:
         CI: true
