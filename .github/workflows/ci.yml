@@ -24,7 +24,6 @@ jons:
         env:
           CI: true
     deploy:
-      needs: build
       name: GitHub Pages Deploy
       runs-on: macOS-latest
       steps:
