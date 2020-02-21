@@ -18,6 +18,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - name: echo
       - run: |
           echo hello world
           npm run build
@@ -30,4 +31,3 @@ jobs:
     steps:
       - name: GitHub Pages Deploy
       - uses: maxheld83/ghpages@v0.2.1
-      - run: echo ok
