@@ -1,4 +1,4 @@
-# github actionn status
+# github action status
 
 ![Node.js CI](https://github.com/json-HB/gitAction/workflows/Node.js%20CI/badge.svg?branch=master&event=push)
 
