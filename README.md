@@ -10,6 +10,6 @@ _use github action deploy page to github pages_
 
 _on: push_
 
-## evvironment
+## environment
 
 _node [10.x]_
